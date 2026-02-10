@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Oechsle | Extractor de Imágenes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              oechsle: {
+                red: '#E30613',
+                darkRed: '#C20510',
+                black: '#000000',
+                gray: '#F2F2F2',
+                border: '#E0E0E0'
+              }
+            },
+            keyframes: {
+              shake: {
+                '0%, 100%': { transform: 'translateX(0)' },
+                '10%, 30%, 50%, 70%, 90%': { transform: 'translateX(-4px)' },
+                '20%, 40%, 60%, 80%': { transform: 'translateX(4px)' },
+              },
+              'fade-in': {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            },
+            animation: {
+              shake: 'shake 0.4s ease-in-out',
+              'fade-in': 'fade-in 0.5s ease-out'
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #FFFFFF;
+        color: #000000;
+        -webkit-font-smoothing: antialiased;
+      }
+      .oechsle-shadow {
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      }
+      .oechsle-button-primary {
+        background-color: #E30613;
+        color: #FFFFFF;
+        transition: background-color 0.2s;
+      }
+      .oechsle-button-primary:hover {
+        background-color: #C20510;
+      }
+      .oechsle-input {
+        border: 1px solid #E0E0E0;
+        border-radius: 4px;
+      }
+      .oechsle-input:focus {
+        border-color: #E30613;
+        outline: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
