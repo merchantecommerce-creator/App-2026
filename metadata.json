@@ -1,5 +1,5 @@
 {
   "name": "Isométrico + AI v2",
-  "description": "Herramienta profesional para extraer imágenes de productos Oechsle, convertirlas a JPG automáticamente y renombrarlas usando IA.",
+  "description": "Administra y sincroniza fotos de productos para el catálogo VTEX. Obtén, edita y sube imágenes directamente a tu tienda VTEX.",
   "requestFramePermissions": []
 }
